@@ -1,0 +1,73 @@
+<div class="modern-content-container">
+      <div class="modern-content">
+            
+        <form class="prevent-multi-submit" id="new_identity" action="/service/auth/integrations/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓" autocomplete="off"><input type="hidden" name="authenticity_token" value="heT9lPWzzwuZdaNjFmjHAQd25Lbvf8FkPxQLTYECLqW-r8wVTCQTfb6OIEtVkmxWHAPc4mcfWNnAfUbftY4k_g" autocomplete="off">
+            <div class="freshbooks-logo-web">
+              <img width="221" height="50" src="/service/auth/build/scss/freshbooks-logo-web-3e75f8788b92568866a832aa88b521c1bbe63fc522896cdbbd946cfcb50cf95c.svg">
+            </div>
+
+          <div class="form-header--signup">
+            <h2 class="form-header--signup-headline">
+              Log in to FreshBooks
+            </h2>
+          </div>
+
+          <div class="form-input--signup">
+            <input type="hidden" name="locale" id="locale_id" value="en" autocomplete="off">
+            
+            <div class="form-row">
+              <input autofocus="autofocus" class="form-input signin-textfield" required="required" placeholder=" " onchange="return validateEmail();" title="" type="email" name="identity[email]" id="identity_email">
+              <label class="floating-label" for="identity_email">Email</label>
+            </div>
+            <div class="input-helper-text--email"></div>
+            <div class="form-row">
+              <input class="form-input signin-textfield signin-textfield--password fs-exclude" required="required" placeholder=" " title="" type="password" name="identity[password]" id="identity_password">
+              <label class="floating-label" for="identity_password">Password</label>
+              <button type="button" class="pwd-toggle-button" onclick="togglePasswordVisibility()">Show</button>
+            </div>
+            <div class="input-helper-text--password"></div>
+          </div>
+
+          <div class="form-row oauth-login-text"><input type="submit" name="commit" value="Log In" class="button-primary oauth-login-button" onclick="return isSignInFormValid();" data-disable-with="Log In"></div>
+        </form>
+          <div class="form-row form-row--centered form-seperator form-seperator-lined">OR</div>
+
+          <div class="omniauth-siw">
+            <a rel="nofollow" data-method="post" href="/service/auth/auth/google_oauth2_central_sso?intent=sign_in">
+              <img src="/service/auth/build/scss/google-signin-logo-0cf576a5dab9315daac7ffe29d29ed585e0ff9850e59408d0f25f38dc1da037b.svg" width="24" height="24"><span class="omniauth-siw-text">Sign in with Google</span>
+            </a> 
+          </div>
+
+          <div class="omniauth-siw">
+            <a rel="nofollow" data-method="post" href="/service/auth/auth/apple?intent=sign_in">
+              <img src="/service/auth/build/scss/apple-signin-logo-73c61c9c2bb19d907b848133fcb689aac4a5ab9ceb1c77dae1253a85bb08adb8.svg" width="24" height="24"><span class="omniauth-siw-text">Sign in with Apple</span>
+            </a>  
+          </div>
+
+        <div class="form-row-wrapper">
+          <div class="form-row form-row--left form-row--password">
+            <a class="forgot-password-link signin-links" href="/service/auth/integrations/password/new">Forgot Your Password?</a>
+          </div>
+          <div class="form-row form-row--right form-row--password">
+            <a class="cannot-login-link signin-links" onclick="return trackGTMCannotLoginEvent()" href="https://support.freshbooks.com/hc/en-us/articles/115015843527-How-Do-I-Log-In-#faqs">Can't Log In?</a>
+          </div>
+        </div>
+
+        <div class="form-row form-row--centered form-row--secondary signup-wrapper">
+          <a class="signin-links signin-links-text" href="/service/auth/integrations/sign_up">Sign Up</a>
+        </div>
+      </div>
+      <div class="modern-footer">
+        <div class="modern-footer--language">
+          <i class="icon icon--fontAwesome icon--globe"></i>
+          <a href="/service/auth/en/integrations/sign_in?_gl=1%2Ay5hk91%2A_gcl_au%2AMTg5MjcyNjY1NC4xNzExOTc4MDAx%2A_ga%2AMTc4MDg0MTQ4OS4xNjg5NzcyNDcy%2A_ga_LNDHWTHSMK%2AMTcxOTU3ODM5Ni4yNTkuMC4xNzE5NTc4Mzk2LjYwLjAuMA..">English</a> |
+          <a href="/service/auth/es/integrations/sign_in?_gl=1%2Ay5hk91%2A_gcl_au%2AMTg5MjcyNjY1NC4xNzExOTc4MDAx%2A_ga%2AMTc4MDg0MTQ4OS4xNjg5NzcyNDcy%2A_ga_LNDHWTHSMK%2AMTcxOTU3ODM5Ni4yNTkuMC4xNzE5NTc4Mzk2LjYwLjAuMA..">Español</a>
+        </div>
+        <div class="modern-footer--security">
+          <i class="icon icon--fontAwesome icon--lock"></i>
+          <a target="_blank" href="https://www.freshbooks.com/policies/security-safeguards">Security Safeguards</a>
+            | <a target="_blank" href="https://www.freshbooks.com/policies/terms-of-service">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  
