@@ -67,7 +67,7 @@ git push -d origin ${H_BRANCH}   # Delete remote
 ## AppFramework
 ```
 # [railsbytes: rails templates](https://railsbytes.com/)
-APP_NAME=airbnb-app-0
+APP_NAME=airbnb-app-1
 RAILS_BUILD_VERSION=7.2.1
 
 # WITHOUT TESTS
@@ -163,7 +163,12 @@ npm install
 # [signup modal](https://auth.freshbooks.com/service/auth/integrations/sign_in?_gl=1*y5hk91*_gcl_au*MTg5MjcyNjY1NC4xNzExOTc4MDAx*_ga*MTc4MDg0MTQ4OS4xNjg5NzcyNDcy*_ga_LNDHWTHSMK*MTcxOTU3ODM5Ni4yNTkuMC4xNzE5NTc4Mzk2LjYwLjAuMA..)
 
 
+# [tailwindcss](https://tailwindcss.com/docs/installation)
+```
+npm install -D tailwindcss
+npx tailwindcss init
 
+```
 
 
 

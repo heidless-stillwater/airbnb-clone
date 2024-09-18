@@ -1,6 +1,5 @@
 
 
-
 <div class="modal-dialog" style="max-width:50%;">
   <div class="modal-content">
     <div class="modal-header text-center">
@@ -13,7 +12,8 @@
 
     <div class="sc-17e9fa4e-17 goGKqP">
       <div>
-        <form id="a0-signup-form">
+        <%= form_with url: api_user_path do |f|  %>
+        <!-- <form id="a0-signup-form"> -->
           <fieldset>
             <label class="sc-17e9fa4e-19 dQpruE">
               Email<input name="email" type="email" placeholder="Email" class="sc-17e9fa4e-18 iKJuDc" value="">
@@ -30,7 +30,8 @@
               </div>
               <button id="database" type="submit" data-element-id="btn-submit-email-continue">Continue</button>
           </fieldset>
-        </form>
+        <!-- </form> -->
+        <% end %>
           
         <div class="sc-17e9fa4e-21 iRcHqf">
           <span>or</span>
