@@ -111,7 +111,7 @@ gem 'devise'
 bundle install
 
 rails g devise:install
-rails g devise User   # create devise Users
+rails g devise user  # create devise user model
 
 # IF NEEDED
 # rails db:rollback
