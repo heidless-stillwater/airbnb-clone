@@ -53,11 +53,9 @@ rspec spec/card_spec.rb   #  isolate SPECIFIC test
 ```
 git checkout main
 
-export H_BRANCH='rspec-0'
+export H_BRANCH='0-DEVISE-0'
 echo ${H_BRANCH}
-
 git branch -d ${H_BRANCH}               # Delete local
-
 git push -d origin ${H_BRANCH}   # Delete remote
 
 
