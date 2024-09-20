@@ -1,8 +1,8 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height:80px">
   <div class="container-fluid">
-    <div class="mx-auto" style="width: 60px;">
-      <%= link_to image_tag("airbnb-favicon.ico", :alt => "navbar graphic"), root_path %>
+    <div class="mx-auto">
+      <%= link_to image_tag("airbnb-favicon.ico", class:"mx-5", :alt => "navbar graphic"), root_path %>
     </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -37,9 +37,17 @@
         </form>
       </div>
     </div>
+
     <ul class="navbar-nav">
+    
+      <div class="pt-4">
+        <%= button_to image_tag("bell_14875523.png", class:"mx-5", size:"30x30", alt:"header notification icon"), root_path %>
+      </div>
+
+      <li class="nav-item">
+      </li>
       <li class="nav-item dropdown">
-        <%= render 'layouts/profile-menu'  %>
+        <%= render 'layouts/profile-menu'%>
       </li>
     </ul>
   </div>
