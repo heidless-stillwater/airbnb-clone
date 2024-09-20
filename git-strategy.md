@@ -20,7 +20,7 @@
 ```
 [main]
 
-git checkout -b [develop branch]  # 0-DEVELOP-0
+git checkout -b [develop branch]  # DEVELOP-0
 
 
 git checkout -b [feature-branch]  # 0.0-header-0
