@@ -1,13 +1,12 @@
 
 <div class="container mt-4">
-  <h1>Hello World!</h1>
+  <h1 class="mb-4">airbnb clone: (<%= @all_users.size %> users registered)</h1>
+  <h2 class="mb-4"><%= @all_users.size %> users registered</h2>
 
   <% @all_users.each do |usr|  %>
-
     <ul>
       <li><%= usr.id %> | <%= usr.email %></li>
     </ul>
-
   <% end %>
 
 </div>
