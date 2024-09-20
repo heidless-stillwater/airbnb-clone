@@ -25,6 +25,12 @@ rails routes -c api/users
 
 ```
 
+### [mdb](https://mdbootstrap.com/docs/standard/navigation/navbar/examples-and-customization/)
+```
+
+
+```
+
 ### [factory_bot](https://github.com/thoughtbot/factory_bot)
 ```
 bundle add factory_bot

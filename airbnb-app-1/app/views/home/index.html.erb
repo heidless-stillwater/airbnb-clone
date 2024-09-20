@@ -1,4 +1,13 @@
 
 <div class="container mt-4">
   <h1>Hello World!</h1>
+
+  <% @all_users.each do |usr|  %>
+
+    <ul>
+      <li><%= usr.id %> | <%= usr.email %></li>
+    </ul>
+
+  <% end %>
+
 </div>
