@@ -6,6 +6,8 @@
   <h1 class="mb-4">airbnb clone: (<%= @all_users.size %> users registered)</h1>
   <h2 class="mb-4"><%= @all_users.size %> users registered</h2>
 
+  <%= render 'layouts/registration' %>
+
   <% @all_users.each do |usr|  %>
     <ul>
       <li><%= usr.id %> | <%= usr.email %></li>
