@@ -25,8 +25,21 @@ rails routes -c api/users
 
 ```
 
+### [social signup page](https://www.creative-tim.com/bits/bootstrap/signup-page-now-ui-kit)
+
+### [16. Login/Registration Form Transition (Nikolay Talanov on CodePen)](https://blog.hubspot.com/website/bootstrap-form-template)
+
+```
+
+
+```
+
+
+
 ### [mdb](https://mdbootstrap.com/docs/standard/navigation/navbar/examples-and-customization/)
 ```
+# Login PopUp
+https://mdbootstrap.com/docs/standard/extended/login/
 
 
 ```
