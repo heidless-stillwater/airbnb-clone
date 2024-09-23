@@ -1,24 +1,26 @@
 
 <div class="container mt-4">
 
-  <div data-controller="header"></div>
+  <div data-controller="modal"></div>
 
-  <h1 class="mb-4">airbnb clone: (<%= @all_users.size %> users registered)</h1>
-  <h2 class="mb-4"><%= @all_users.size %> users registered</h2>
+  <div class="container">
+    <h1 class="mb-4 pt-5">airbnb clone: (<%= @all_users.size %> users registered)</h1>
+  </div>
 
-  <div class="mt-5" style="">
-    <%= render 'layouts/registration-modal-0' %>
-  <div>
+  <div class="container mb-5 pt-3 pb-3 text-white bg-primary rounded-5", style="width:500px">
+    <h1>test</h1>
+  </div>
 
-  <div class="mt-5" style="">
-    <%= render 'layouts/registration' %>
-  <div>
+  <div class="container pt-3 pb-3 text-white bg-primary rounded-9", style="width:500px">
+    <% @all_users.each do |usr|  %>
+      <ul>
+        <li><%= usr.id %> | <%= usr.email %></li>
+      </ul>
+    <% end %>
+  </div>
 
-
-  <% @all_users.each do |usr|  %>
-    <ul>
-      <li><%= usr.id %> | <%= usr.email %></li>
-    </ul>
-  <% end %>
+  <div class="pt-3 pb-3 text-white bg-primary rounded-9", style="width:500px">
+    <h1>test</h1>
+  </div>
 
 </div>
