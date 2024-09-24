@@ -5,6 +5,15 @@
     <div class="modal-dialog d-flex justify-content-center">
         <div class="modal-content w-75">
             <div class="modal-header">
+                
+                <div class="pt-5">
+                <div class="text-center mb-2">     
+                    <%= image_tag("avatar.png", size:"100x100", class:"mx-auto", alt:"site avatar") %>
+                </div>
+
+                <h3 class="fs-6 fw-dark text-secondary text-center m-0">Enter your details</h3>
+                </div>
+
                 <h5 class="modal-title" id="exampleModalLabel2">Log In</h5>
                 <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -12,20 +21,20 @@
                 <form>
                     <!-- Name input -->
                     <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="text" id="name2" class="form-control" placeholder="default-user-name"/>
                         <label class="form-label" for="name2">Name</label>
+                        <input type="text" id="name2" class="form-control" placeholder="default-user-name"/>
                     </div>
 
                     <!-- Email input -->
                     <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="email" id="email2" class="form-control" placeholder="default-email" />
                         <label class="form-label" for="email2">Email address</label>
+                        <input type="email" id="email2" class="form-control" placeholder="default-email" />
                     </div>
 
                     <!-- password input -->
                     <div data-mdb-input-init class="form-outline mb-4">
-                        <input type="password" id="password2" class="form-control" placeholder="placeholder" />
                         <label class="form-label" for="password2">Password</label>
+                        <input type="password" id="password2" class="form-control" placeholder="placeholder" />
                     </div>
 
                     <!-- Submit button -->
