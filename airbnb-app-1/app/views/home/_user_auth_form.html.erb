@@ -17,7 +17,7 @@
         <hr>
 
         <div class="modal-body ">
-            <form>
+            <%= form_with url: api_users_by_email_path do |f| %>
             
                 <!-- Name input -->
                 <div data-mdb-input-init class="form-outline mb-4">
@@ -42,8 +42,7 @@
                     <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block w-100">Sign up</button>
                 </div>
         
-                
-            </form>
+            <% end %>
 
         
             <div class="modal-header">
