@@ -1,7 +1,9 @@
 source "https://rubygems.org"
 
 gem 'devise'
-gem 'sass-rails'
+
+gem "sass-rails", "~> 6.0"
+gem "sass", "~> 3.7"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.2.1"
@@ -58,3 +60,4 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 end
+
