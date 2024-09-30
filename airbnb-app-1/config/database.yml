@@ -78,8 +78,14 @@ test:
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
+
+
+# [START cloudrun_rails_database]
 production:
   <<: *default
-  database: airbnb_app_1_production
-  username: airbnb_app_1
-  password: <%= ENV["AIRBNB_APP_1_DATABASE_PASSWORD"] %>
+  database: <%= Rails.application.credentials.dig(:gcp, :db_database) %>
+  username: <%= Rails.application.credentials.dig(:gcp, :db_username) %>
+  password: <%= Rails.application.credentials.dig(:gcp, :db_password) %>
+  host: "<%= ENV.fetch("DB_SOCKET_DIR") { '/cloudsql' } %>/<%= Rails.application.credentials.dig(:gcp, :db_instance_host) %>"
+# [END cloudrun_rails_database]
+
